@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:ital,wght@0,300;0,400;1,300&family=Montserrat:wght@300;400;500;700&family=Pacifico&family=Playfair+Display:wght@700&family=Poppins:wght@200;400&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #beebe7;
+}
+
+h2 {
+    margin: 1rem auto;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    color: white;
+}
+
+.mainContainer {
+    max-width: 70%;
+    width: 100%;
+    max-height: 90vh;
+    margin: 3rem auto 0 auto;
+    background-color: #3972BC;
+    border-radius: 0.4rem;
+    padding: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.container {
+    max-width: 65vw;
+    width: 100%;
+    margin: auto;
+    border-radius: 0.4rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.container2 {
+    max-height: 23rem;
+    overflow-y: auto;
+}
+
+.container2::-webkit-scrollbar {
+    display: none;
+}
+
+p {
+    display: inline-block;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    margin-bottom: 2rem;
+    padding: 0.4rem;
+}
+
+.search input,
+button {
+    height: 80%;
+}
+
+.search input {
+    width: 60%;
+    border: none;
+    outline: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    text-align: center;
+    padding: 0.2rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border-radius: 0.4rem;
+}
+
+.search button {
+    width: 38%;
+    background-color: white;
+    border: none;
+    outline: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    text-align: right;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0.4rem;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.search button:active {
+    background-color: green;
+    color: white;
+    transition: 0.4s;
+}
+
+.result {
+    padding: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 0.4rem;
+    background-color: white;
+    font-size: 1.3rem;
+}
+
+audio {
+    width: 90%;
+    height: 2rem;
+    margin: auto;
+}
+
+@media(max-width:500px) {
+    .mainContainer {
+
+        max-width: 87%;
+        width: 100%;
+        max-height: 90vh;
+    }
+
+    .container {
+        max-width: 75vw;
+        width: 100%;
+    }
+
+}
